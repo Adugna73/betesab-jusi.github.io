@@ -29,7 +29,7 @@
             box-sizing: border-box;
         }
 
-        /* BTN MUUZIIQAA KILAASIKAALAA */
+        /* BTN MUUZIIQAA KILAASIKAALAA HAARAA */
         .music-btn {
             background: linear-gradient(135deg, #2c3e50, #1a252f);
             color: #f1c40f;
@@ -57,15 +57,14 @@
             font-size: 24px;
             font-weight: 900;
             text-transform: uppercase;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .menu-subtitle {
             text-align: center;
             color: #2c3e50;
-            font-size: 13.5px;
+            font-size: 14px;
             margin-top: 0;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             font-weight: bold;
             line-height: 1.5;
         }
@@ -74,12 +73,13 @@
             background: linear-gradient(135deg, #f1f2f6, #e4e7eb);
             color: #27ae60;
             text-align: center;
-            padding: 10px;
-            border-radius: 10px;
+            padding: 12px;
+            border-radius: 12px;
             font-size: 14px;
             font-weight: bold;
             margin-bottom: 20px;
             border-left: 5px solid #2ecc71;
+            line-height: 1.4;
         }
 
         .order-box {
@@ -113,7 +113,6 @@
             font-size: 16px;
             margin-top: 0;
             margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(211, 84, 0, 0.2);
         }
 
         .menu-section .juice-title {
@@ -129,11 +128,6 @@
             margin-bottom: 12px;
             border: 1px solid #f1f2f6;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            transition: transform 0.2s;
-        }
-        .menu-item-box:hover {
-            transform: scale(1.02);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
 
         .item-image {
@@ -178,28 +172,29 @@
 </head>
 <body>
 
-<!-- CLASSICAL MUSIC FROM THE WEB -->
-<audio id="classicalMusic" loop crossorigin="anonymous">
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+<!-- LIINKII MUUZIIQAA KILAASIKAALAA HAARAA KAN HOJJETU -->
+<audio id="classicalMusic" loop preload="auto">
+    <source src="https://assets.mixkit.co/active_storage/sfx/123/123-200.mp3" type="audio/mpeg">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
 </audio>
 
 <div class="menu-container">
     
     <!-- BUTTON MUUZIIQAA -->
     <div class="music-btn" id="musicTrigger">
-        🎻 CLASSICAL MUSIC BANUUF AS TUQI 🎵
+        演奏 CLASSICAL MUSIC BANUUF AS TUQI 🎵
     </div>
 
     <!-- MATA DUREE -->
     <h1 class="menu-title">🍔 MANA JUSII FI BURGERII BETESAB 🍹</h1>
     <p class="menu-subtitle">
         📍 Sebeta | Baankii Dasheen Isa Guddaa Fulduraa <br>
-        (Baankii Abisiiniyaa Cinaa, Taksi Tera Bira)
+        (Baankii Abisiiniyaa Cinaa)
     </p>
     
     <!-- BAKKA MIJAATAA -->
     <div class="ambience-info">
-        🌿 Hirippootaa fi Maatii Keessaniif Bakka Mijataa fi Bashannansiisaa!
+        🌿 Hirippoota keessaniifi maatii keessan hundaaf bakka mijaata qabna kootaa!
     </div>
 
     <!-- BOX AJAJAA (BILBILA) -->
@@ -208,11 +203,10 @@
         <a href="tel:0963239481">0963239481</a>
     </div>
     
-    <!-- ================= KUTAA BURGERII (KAN HO'AA) ================= -->
+    <!-- ================= KUTAA BURGERII ================= -->
     <div class="menu-section">
         <h3>🔥 Kutaa Nyaata Ho'aa (Burger)</h3>
         
-        <!-- ITEM 1: ATAKILT BURGER -->
         <div class="menu-item-box">
             <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&auto=format&fit=crop&q=80" alt="Atakilt Burger" class="item-image">
             <div class="item-details">
@@ -221,7 +215,6 @@
             </div>
         </div>
 
-        <!-- ITEM 2: CHEESE BURGER -->
         <div class="menu-item-box">
             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=80" alt="Special Cheese Burger" class="item-image">
             <div class="item-details">
@@ -231,11 +224,10 @@
         </div>
     </div>
 
-    <!-- ================= KUTAA JUSII (KAN LALAAFAA) ================= -->
+    <!-- ================= KUTAA JUSII ================= -->
     <div class="menu-section">
         <h3 class="juice-title">🥑 Kutaa Dhugaatii Lalaafaa (Juice)</h3>
         
-        <!-- ITEM 3: JUSII SPRISE -->
         <div class="menu-item-box">
             <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&auto=format&fit=crop&q=80" alt="Jusii Sprise" class="item-image">
             <div class="item-details">
@@ -244,9 +236,8 @@
             </div>
         </div>
 
-        <!-- ITEM 4: AVOCADO / MANGO / PAPAYA -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&auto=format&fit=crop&q=80" alt="Avocado Mango Papaya Mix" class="item-image">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&auto=format&fit=crop&q=80" alt="Avocado Mango" class="item-image">
             <div class="item-details">
                 <span class="item-name">Juusii Lalaafaa (Avocado/Mango)</span>
                 <span class="price">ETB --</span>
@@ -254,7 +245,7 @@
         </div>
     </div>
 
-    <p class="footer-text">Maatii Keessan Waliin Saffisaan Nu Biratti Argamaa!</p>
+    <p class="footer-text">Nu biratti nagaaan simatamtamaa!</p>
 </div>
 
 <script>
@@ -268,7 +259,7 @@
                 musicTrigger.style.background = "linear-gradient(135deg, #27ae60, #2ecc71)";
                 musicTrigger.style.color = "white";
             }).catch(err => {
-                console.log("Audio play failed: " + err);
+                alert("Maaloo irra deebi'ii tuqi ykn internet kee mirkaneessi!");
             });
         } else {
             audio.pause();
