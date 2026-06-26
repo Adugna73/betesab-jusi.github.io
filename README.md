@@ -1,2 +1,136 @@
-# betesab-jusi.github.io
+<div class="menu-container">
+    <!-- MATA DUREE -->
+    <h1 class="menu-title">🍔 MANA JUSII FI BURGERII BETESAB 🍹</h1>
+    <p class="menu-subtitle">📍 Sebeta | Baankii Abisiiniyaa Cinaa, Taksi Tera Bira</p>
+    
+    <!-- ================= KUTAA BURGERII ================= -->
+    <div class="menu-section">
+        <h3>🍔 Kutaa Burgerii (Kan Ho'aa)</h3>
+        
+        <!-- ITEM 1: ATAKILT BURGER -->
+        <div class="menu-item-box">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&auto=format&fit=crop&q=60" alt="Atakilt Burger" class="item-image">
+            <div class="item-details">
+                <span class="item-name">Atakilt Burger</span>
+                <span class="price">ETB --</span>
+            </div>
+        </div>
+
+        <!-- ITEM 2: CHEESE BURGER -->
+        <div class="menu-item-box">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=60" alt="Special Cheese Burger" class="item-image">
+            <div class="item-details">
+                <span class="item-name">Special Cheese Burger</span>
+                <span class="price">ETB --</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= KUTAA JUSII ================= -->
+    <div class="menu-section">
+        <h3>🍹 Kutaa Jusii (Kan Lalaafaa & Fresh)</h3>
+        
+        <!-- ITEM 3: JUSII SPRISE -->
+        <div class="menu-item-box">
+            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&auto=format&fit=crop&q=60" alt="Jusii Sprise" class="item-image">
+            <div class="item-details">
+                <span class="item-name">Jusii Sprise (Special)</span>
+                <span class="price">ETB --</span>
+            </div>
+        </div>
+
+        <!-- ITEM 4: AVOCADO / MANGO / PAPAYA -->
+        <div class="menu-item-box">
+            <img src="https://images.unsplash.com/photo-1628163182890-a598b1b41416?w=400&auto=format&fit=crop&q=60" alt="Avocado Mango Papaya Mix" class="item-image">
+            <div class="item-details">
+                <span class="item-name">Avocado / Mango / Papaya</span>
+                <span class="price">ETB --</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* STYLING DIZAYINII GUUTUU */
+    .menu-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        max-width: 480px;
+        margin: 20px auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 3px solid #e67e22;
+        box-sizing: border-box;
+    }
+    .menu-title {
+        color: #d35400;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .menu-subtitle {
+        text-align: center;
+        color: #7f8c8d;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+    .menu-section {
+        margin-bottom: 25px;
+    }
+    .menu-section h3 {
+        background: linear-gradient(135deg, #e67e22, #f1c40f);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        box-shadow: 0 3px 10px rgba(230, 126, 34, 0.2);
+    }
+    
+    /* DIZAYINII FAKKII FI BARREEFFAMA WALITTI FIIDU */
+    .menu-item-box {
+        display: flex;
+        align-items: center;
+        background-color: #fcfcfc;
+        padding: 10px;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        border: 1px solid #f1f2f6;
+        transition: transform 0.2s;
+    }
+    .menu-item-box:hover {
+        transform: scale(1.02);
+        background-color: #f8f9fa;
+    }
+    .item-image {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 15px;
+        border: 1px solid #ddd;
+    }
+    .item-details {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .item-name {
+        font-weight: 600;
+        color: #2c3e50;
+        font-size: 15px;
+    }
+    .price {
+        color: #27ae60;
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style># betesab-jusi.github.io
 Jus betesab 
