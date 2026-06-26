@@ -9,7 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1000&auto=format&fit=crop&q=80') no-repeat center center fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1000&auto=format&fit=crop&q=80') no-repeat center center fixed;
             background-size: cover;
             min-height: 100vh;
             display: flex;
@@ -29,6 +29,27 @@
             box-sizing: border-box;
         }
 
+        /* BTN MUUZIIQAA KILAASIKAALAA */
+        .music-btn {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: #f1c40f;
+            padding: 10px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #f1c40f;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
         .menu-title {
             color: #d35400;
             text-align: center;
@@ -36,16 +57,46 @@
             font-size: 22px;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .menu-subtitle {
             text-align: center;
-            color: #7f8c8d;
-            font-size: 14px;
+            color: #2c3e50;
+            font-size: 13.5px;
             margin-top: 0;
-            margin-bottom: 25px;
-            font-weight: 500;
+            margin-bottom: 10px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        
+        .ambience-info {
+            background-color: #f1f2f6;
+            color: #27ae60;
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 13.5px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border-left: 4px solid #2ecc71;
+        }
+
+        .order-box {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+        }
+        .order-box a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            margin-top: 5px;
         }
 
         .menu-section {
@@ -60,7 +111,6 @@
             font-size: 16px;
             margin-top: 0;
             margin-bottom: 15px;
-            box-shadow: 0 3px 10px rgba(230, 126, 34, 0.2);
         }
         
         .menu-item-box {
@@ -71,12 +121,6 @@
             border-radius: 12px;
             margin-bottom: 12px;
             border: 1px solid #f1f2f6;
-            transition: transform 0.2s;
-        }
-
-        .menu-item-box:hover {
-            transform: scale(1.02);
-            background-color: #f8f9fa;
         }
 
         .item-image {
@@ -115,14 +159,40 @@
             border-top: 1px dashed #ddd;
             padding-top: 10px;
         }
+        audio { display: none; }
     </style>
 </head>
 <body>
 
+<!-- MUUZIIQAA KILAASIKAALAA INTERNEETII IRRAA KALLATTIIN -->
+<audio id="classicalMusic" loop crossorigin="anonymous">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
 <div class="menu-container">
+    
+    <!-- BUTTON MUUZIIQAA -->
+    <div class="music-btn" id="musicTrigger">
+        🎻 CLASSICAL MUSIC BANUUF AS TUQI 🎵
+    </div>
+
     <!-- MATA DUREE -->
     <h1 class="menu-title">🍔 MANA JUSII FI BURGERII BETESAB 🍹</h1>
-    <p class="menu-subtitle">📍 Sebeta | Baankii Abisiiniyaa Cinaa, Taksi Tera Bira</p>
+    <p class="menu-subtitle">
+        📍 Sebeta | Baankii Dasheen Isa Guddaa Fulduraa <br>
+        (Baankii Abisiiniyaa Cinaa, Taksi Tera Bira)
+    </p>
+    
+    <!-- BAKKA MIJAATAA -->
+    <div class="ambience-info">
+        🌿 Hirippootaa fi Maatii Keessaniif Bakka Mijataa fi Bashannansiisaa!
+    </div>
+
+    <!-- BOX AJAJAA (BILBILA) -->
+    <div class="order-box">
+        📞 Bilbilaan Ajajuuf (Order):
+        <a href="tel:0963239481">0963239481</a>
+    </div>
     
     <!-- ================= KUTAA BURGERII ================= -->
     <div class="menu-section">
@@ -130,7 +200,7 @@
         
         <!-- ITEM 1: ATAKILT BURGER -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&auto=format&fit=crop&q=60" alt="Atakilt Burger" class="item-image">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400" alt="Atakilt Burger" class="item-image">
             <div class="item-details">
                 <span class="item-name">Atakilt Burger</span>
                 <span class="price">ETB --</span>
@@ -139,7 +209,7 @@
 
         <!-- ITEM 2: CHEESE BURGER -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=60" alt="Special Cheese Burger" class="item-image">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Special Cheese Burger" class="item-image">
             <div class="item-details">
                 <span class="item-name">Special Cheese Burger</span>
                 <span class="price">ETB --</span>
@@ -153,7 +223,7 @@
         
         <!-- ITEM 3: JUSII SPRISE -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&auto=format&fit=crop&q=60" alt="Jusii Sprise" class="item-image">
+            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400" alt="Jusii Sprise" class="item-image">
             <div class="item-details">
                 <span class="item-name">Jusii Sprise (Special)</span>
                 <span class="price">ETB --</span>
@@ -162,7 +232,7 @@
 
         <!-- ITEM 4: AVOCADO / MANGO / PAPAYA -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1628163182890-a598b1b41416?w=400&auto=format&fit=crop&q=60" alt="Avocado Mango Papaya Mix" class="item-image">
+            <img src="https://images.unsplash.com/photo-1628163182890-a598b1b41416?w=400" alt="Avocado Mango" class="item-image">
             <div class="item-details">
                 <span class="item-name">Juusii Lalaafaa (Avocado/Mango)</span>
                 <span class="price">ETB --</span>
@@ -172,6 +242,28 @@
 
     <p class="footer-text">Maatii Keessan Waliin Saffisaan Nu Biratti Argamaa!</p>
 </div>
+
+<script>
+    var audio = document.getElementById('classicalMusic');
+    var musicTrigger = document.getElementById('musicTrigger');
+
+    musicTrigger.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play().then(() => {
+                musicTrigger.innerHTML = "🔕 MUUZIIQAA DHAABUUF AS TUQI";
+                musicTrigger.style.background = "linear-gradient(135deg, #27ae60, #2ecc71)";
+                musicTrigger.style.color = "white";
+            }).catch(err => {
+                console.log("Audio play failed: " + err);
+            });
+        } else {
+            audio.pause();
+            musicTrigger.innerHTML = "🎻 CLASSICAL MUSIC BANUUF AS TUQI 🎵";
+            musicTrigger.style.background = "linear-gradient(135deg, #34495e, #2c3e50)";
+            musicTrigger.style.color = "#f1c40f";
+        }
+    });
+</script>
 
 </body>
 </html>
