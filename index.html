@@ -9,7 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1000&auto=format&fit=crop&q=80') no-repeat center center fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1000&auto=format&fit=crop&q=80') no-repeat center center fixed;
             background-size: cover;
             min-height: 100vh;
             display: flex;
@@ -21,27 +21,27 @@
         .menu-container {
             background-color: rgba(255, 255, 255, 0.98);
             padding: 25px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
             max-width: 480px;
             width: 90%;
-            border: 3px solid #e67e22;
+            border: 4px solid #e67e22;
             box-sizing: border-box;
         }
 
         /* BTN MUUZIIQAA KILAASIKAALAA */
         .music-btn {
-            background: linear-gradient(135deg, #34495e, #2c3e50);
+            background: linear-gradient(135deg, #2c3e50, #1a252f);
             color: #f1c40f;
-            padding: 10px;
+            padding: 12px;
             border-radius: 50px;
             font-weight: bold;
             margin-bottom: 20px;
             cursor: pointer;
             text-align: center;
-            font-size: 14px;
-            border: 1px solid #f1c40f;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            font-size: 13.5px;
+            border: 2px solid #f1c40f;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             animation: pulse 2s infinite;
         }
         @keyframes pulse {
@@ -54,9 +54,10 @@
             color: #d35400;
             text-align: center;
             margin-bottom: 5px;
-            font-size: 22px;
-            font-weight: bold;
+            font-size: 24px;
+            font-weight: 900;
             text-transform: uppercase;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .menu-subtitle {
@@ -64,21 +65,21 @@
             color: #2c3e50;
             font-size: 13.5px;
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-weight: bold;
-            line-height: 1.4;
+            line-height: 1.5;
         }
         
         .ambience-info {
-            background-color: #f1f2f6;
+            background: linear-gradient(135deg, #f1f2f6, #e4e7eb);
             color: #27ae60;
             text-align: center;
-            padding: 8px;
-            border-radius: 8px;
-            font-size: 13.5px;
-            font-weight: 600;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
             margin-bottom: 20px;
-            border-left: 4px solid #2ecc71;
+            border-left: 5px solid #2ecc71;
         }
 
         .order-box {
@@ -86,17 +87,18 @@
             color: white;
             text-align: center;
             padding: 12px;
-            border-radius: 12px;
-            margin-bottom: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
             font-weight: bold;
-            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
         }
         .order-box a {
             color: #f1c40f;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
             display: block;
             margin-top: 5px;
+            letter-spacing: 1px;
         }
 
         .menu-section {
@@ -104,32 +106,43 @@
         }
 
         .menu-section h3 {
-            background: linear-gradient(135deg, #e67e22, #f1c40f);
+            background: linear-gradient(135deg, #d35400, #e67e22);
             color: white;
             padding: 10px 15px;
-            border-radius: 10px;
+            border-radius: 12px;
             font-size: 16px;
             margin-top: 0;
             margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(211, 84, 0, 0.2);
+        }
+
+        .menu-section .juice-title {
+            background: linear-gradient(135deg, #27ae60, #2ecc71) !important;
         }
         
         .menu-item-box {
             display: flex;
             align-items: center;
-            background-color: #fcfcfc;
-            padding: 10px;
-            border-radius: 12px;
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 15px;
             margin-bottom: 12px;
             border: 1px solid #f1f2f6;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: transform 0.2s;
+        }
+        .menu-item-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
 
         .item-image {
-            width: 75px;
-            height: 75px;
+            width: 85px;
+            height: 85px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 12px;
             margin-right: 15px;
-            border: 1px solid #ddd;
+            border: 2px solid #f1f2f6;
         }
 
         .item-details {
@@ -140,31 +153,32 @@
         }
 
         .item-name {
-            font-weight: 600;
+            font-weight: 700;
             color: #2c3e50;
-            font-size: 15px;
+            font-size: 15.5px;
         }
 
         .price {
             color: #27ae60;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 17px;
         }
 
         .footer-text {
             text-align: center;
             color: #7f8c8d;
-            font-size: 12px;
-            margin-top: 20px;
+            font-size: 12.5px;
+            margin-top: 25px;
             border-top: 1px dashed #ddd;
-            padding-top: 10px;
+            padding-top: 12px;
+            font-weight: 500;
         }
         audio { display: none; }
     </style>
 </head>
 <body>
 
-<!-- MUUZIIQAA KILAASIKAALAA INTERNEETII IRRAA KALLATTIIN -->
+<!-- CLASSICAL MUSIC FROM THE WEB -->
 <audio id="classicalMusic" loop crossorigin="anonymous">
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
 </audio>
@@ -194,13 +208,13 @@
         <a href="tel:0963239481">0963239481</a>
     </div>
     
-    <!-- ================= KUTAA BURGERII ================= -->
+    <!-- ================= KUTAA BURGERII (KAN HO'AA) ================= -->
     <div class="menu-section">
-        <h3>🍔 Kutaa Burgerii (Kan Ho'aa)</h3>
+        <h3>🔥 Kutaa Nyaata Ho'aa (Burger)</h3>
         
         <!-- ITEM 1: ATAKILT BURGER -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400" alt="Atakilt Burger" class="item-image">
+            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&auto=format&fit=crop&q=80" alt="Atakilt Burger" class="item-image">
             <div class="item-details">
                 <span class="item-name">Atakilt Burger</span>
                 <span class="price">ETB --</span>
@@ -209,7 +223,7 @@
 
         <!-- ITEM 2: CHEESE BURGER -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Special Cheese Burger" class="item-image">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=80" alt="Special Cheese Burger" class="item-image">
             <div class="item-details">
                 <span class="item-name">Special Cheese Burger</span>
                 <span class="price">ETB --</span>
@@ -217,13 +231,13 @@
         </div>
     </div>
 
-    <!-- ================= KUTAA JUSII ================= -->
+    <!-- ================= KUTAA JUSII (KAN LALAAFAA) ================= -->
     <div class="menu-section">
-        <h3>🍹 Kutaa Jusii (Kan Lalaafaa & Fresh)</h3>
+        <h3 class="juice-title">🥑 Kutaa Dhugaatii Lalaafaa (Juice)</h3>
         
         <!-- ITEM 3: JUSII SPRISE -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400" alt="Jusii Sprise" class="item-image">
+            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&auto=format&fit=crop&q=80" alt="Jusii Sprise" class="item-image">
             <div class="item-details">
                 <span class="item-name">Jusii Sprise (Special)</span>
                 <span class="price">ETB --</span>
@@ -232,7 +246,7 @@
 
         <!-- ITEM 4: AVOCADO / MANGO / PAPAYA -->
         <div class="menu-item-box">
-            <img src="https://images.unsplash.com/photo-1628163182890-a598b1b41416?w=400" alt="Avocado Mango" class="item-image">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&auto=format&fit=crop&q=80" alt="Avocado Mango Papaya Mix" class="item-image">
             <div class="item-details">
                 <span class="item-name">Juusii Lalaafaa (Avocado/Mango)</span>
                 <span class="price">ETB --</span>
@@ -259,7 +273,7 @@
         } else {
             audio.pause();
             musicTrigger.innerHTML = "🎻 CLASSICAL MUSIC BANUUF AS TUQI 🎵";
-            musicTrigger.style.background = "linear-gradient(135deg, #34495e, #2c3e50)";
+            musicTrigger.style.background = "linear-gradient(135deg, #2c3e50, #1a252f)";
             musicTrigger.style.color = "#f1c40f";
         }
     });
