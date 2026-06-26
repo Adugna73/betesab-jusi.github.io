@@ -29,7 +29,7 @@
             box-sizing: border-box;
         }
 
-        /* BTN MUUZIIQAA KILAASIKAALAA HAARAA */
+        /* BTN MUUZIIQAA KILAASIKAALAA */
         .music-btn {
             background: linear-gradient(135deg, #2c3e50, #1a252f);
             color: #f1c40f;
@@ -75,11 +75,11 @@
             text-align: center;
             padding: 12px;
             border-radius: 12px;
-            font-size: 14px;
+            font-size: 14.5px;
             font-weight: bold;
             margin-bottom: 20px;
             border-left: 5px solid #2ecc71;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .order-box {
@@ -161,20 +161,19 @@
         .footer-text {
             text-align: center;
             color: #7f8c8d;
-            font-size: 12.5px;
+            font-size: 13px;
             margin-top: 25px;
             border-top: 1px dashed #ddd;
             padding-top: 12px;
-            font-weight: 500;
+            font-weight: bold;
         }
         audio { display: none; }
     </style>
 </head>
 <body>
 
-<!-- LIINKII MUUZIIQAA KILAASIKAALAA HAARAA KAN HOJJETU -->
+<!-- LIINKII MUUZIIQAA KILAASIKAALAA MP3 SAAFFISA QABU -->
 <audio id="classicalMusic" loop preload="auto">
-    <source src="https://assets.mixkit.co/active_storage/sfx/123/123-200.mp3" type="audio/mpeg">
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
 </audio>
 
@@ -182,7 +181,7 @@
     
     <!-- BUTTON MUUZIIQAA -->
     <div class="music-btn" id="musicTrigger">
-        演奏 CLASSICAL MUSIC BANUUF AS TUQI 🎵
+        🎻 MUUZIIQAA KILAASIKAALAA BANUUF AS TUQI 🎵
     </div>
 
     <!-- MATA DUREE -->
@@ -194,7 +193,7 @@
     
     <!-- BAKKA MIJAATAA -->
     <div class="ambience-info">
-        🌿 Hirippoota keessaniifi maatii keessan hundaaf bakka mijaata qabna kootaa!
+        🌿 Hiriyyoota keessaniifi maatii keessan hundaaf bakka mijaata qabna kootaa!
     </div>
 
     <!-- BOX AJAJAA (BILBILA) -->
@@ -259,11 +258,11 @@
                 musicTrigger.style.background = "linear-gradient(135deg, #27ae60, #2ecc71)";
                 musicTrigger.style.color = "white";
             }).catch(err => {
-                alert("Maaloo irra deebi'ii tuqi ykn internet kee mirkaneessi!");
+                console.log("Playback failed: " + err);
             });
         } else {
             audio.pause();
-            musicTrigger.innerHTML = "🎻 CLASSICAL MUSIC BANUUF AS TUQI 🎵";
+            musicTrigger.innerHTML = "🎻 MUUZIIQAA KILAASIKAALAA BANUUF AS TUQI 🎵";
             musicTrigger.style.background = "linear-gradient(135deg, #2c3e50, #1a252f)";
             musicTrigger.style.color = "#f1c40f";
         }
